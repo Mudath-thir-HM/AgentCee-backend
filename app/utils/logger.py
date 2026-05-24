@@ -25,4 +25,4 @@ def get_logger(name: str) -> logging.Logger:
     return logger
 
 
-logger = get_logger("astra")
+logger = get_logger("AgentCee")

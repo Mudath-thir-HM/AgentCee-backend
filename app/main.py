@@ -23,13 +23,13 @@ from app.routes.v1 import (
     tracking,
 )
 
-logger = get_logger("astra.main")
+logger = get_logger("AgentCee.main")
 
 
 # ── Lifespan ─────────────────────────────────────────────
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logger.info("Starting up Astra AI API…")
+    logger.info("Starting up AgentCee AI API…")
     await db.connect()
     yield
     logger.info("Shutting down…")

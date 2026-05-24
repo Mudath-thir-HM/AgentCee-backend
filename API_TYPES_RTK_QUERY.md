@@ -1241,8 +1241,8 @@ socket.on("message:new", (message: Message) => {
 ## Summary: RTK Query Hooks Template
 
 ```typescript
-export const astraApi = createApi({
-  reducerPath: 'astraApi',
+export const AgentCeeApi = createApi({
+  reducerPath: 'AgentCeeApi',
   baseQuery: fetchBaseQuery({
     baseUrl: 'http://localhost:8000/api/v1',
     prepareHeaders: (headers, { getState }) => {
@@ -1300,7 +1300,7 @@ export const {
   useGetProfileQuery,
   useUpdateProfileMutation,
   // ... etc
-} = astraApi
+} = AgentCeeApi
 ```
 
 ---

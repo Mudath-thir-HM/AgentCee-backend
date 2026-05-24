@@ -1121,7 +1121,7 @@ CORS_ORIGINS=https://frontend.example.com
 from pydantic import BaseSettings
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "Astra AI Marketing API"
+    PROJECT_NAME: str = "AgentCee AI Marketing API"
     API_VERSION: str = "1.0.0"
     DATABASE_URL: str
     OPENROUTER_API_KEY: str
@@ -1149,7 +1149,7 @@ async def lifespan(app: FastAPI):
     Manages resource initialization.
     """
     # STARTUP
-    logger.info("Starting up Astra AI API…")
+    logger.info("Starting up AgentCee AI API…")
     await db.connect()
     # Initialize other resources
 
@@ -1309,7 +1309,7 @@ def get_logger(name: str) -> logging.Logger:
     return logger
 
 # Usage:
-logger = get_logger("astra.content_service")
+logger = get_logger("AgentCee.content_service")
 logger.info("Content generated for user %s", user_id)
 logger.warning("OpenRouter timeout, using fallback")
 logger.error("Database connection failed", exc_info=True)
