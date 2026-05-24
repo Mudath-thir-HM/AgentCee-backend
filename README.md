@@ -1,6 +1,6 @@
-# Astra AI — Backend
+# AgentCee — Backend
 
-A FastAPI + async Python backend powering the Astra AI social media management platform. Handles authentication, AI content generation, post scheduling, inbox management, analytics, and keyword/mention tracking — all backed by Supabase (PostgreSQL).
+A FastAPI + async Python backend powering the AgentCee social media management platform. Handles authentication, AI content generation, post scheduling, inbox management, analytics, and keyword/mention tracking — all backed by Supabase (PostgreSQL).
 
 ---
 
@@ -57,7 +57,7 @@ Create a `.env` file in the project root with the following:
 
 ```env
 # App
-PROJECT_NAME=Astra AI
+PROJECT_NAME=AgentCee
 API_VERSION=1.0.0
 
 # Supabase
