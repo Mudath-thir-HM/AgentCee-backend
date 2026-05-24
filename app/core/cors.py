@@ -6,7 +6,7 @@ def setup_cors(app):
     app.add_middleware(
         CORSMiddleware,
         allow_origins=[
-            "https://agentcee.netlify.app"
+            settings.FRONTEND_URL or "https://agentcee.netlify.app"
         ],
         allow_credentials=True,
         allow_methods=["*"],
