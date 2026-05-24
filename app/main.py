@@ -43,8 +43,8 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-setup_cors(app)
 app.add_middleware(RateLimitMiddleware)
+setup_cors(app)
 
 
 # ── Global error handler ─────────────────────────────────
